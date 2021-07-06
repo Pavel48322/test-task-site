@@ -12,6 +12,9 @@
     <!-- SVG -->
     <g>
         <svg style="display: none;">
+            <symbol id='search' viewBox="0 0 16 16">
+                <path opacity="0.75" fill-rule="evenodd" clip-rule="evenodd" d="M11.1028 6.52424C11.1028 9.34861 8.90447 11.5485 6.30142 11.5485C3.69837 11.5485 1.5 9.34861 1.5 6.52424C1.5 3.69987 3.69837 1.5 6.30142 1.5C8.90447 1.5 11.1028 3.69987 11.1028 6.52424ZM9.95469 11.8408C8.92421 12.6012 7.66327 13.0485 6.30142 13.0485C2.82124 13.0485 0 10.1275 0 6.52424C0 2.921 2.82124 0 6.30142 0C9.7816 0 12.6028 2.921 12.6028 6.52424C12.6028 8.16684 12.0165 9.66765 11.0488 10.8146L15.0015 14.9643L13.9154 15.9989L9.95469 11.8408Z"/>
+            </symbol>
             <symbol id='window' viewBox="0 0 81 83">
                 <path d="M77.8471 25.5095C75.8146 20.609 72.8577 16.1547 69.1412 12.395C65.4358 8.62879 61.0342 5.6344 56.1864 3.58188C51.2202 1.46902 45.8844 0.385969 40.4958 0.397057H40.3146C34.8337 0.424512 29.534 1.52273 24.5424 3.68254C19.7362 5.75611 15.3759 8.75582 11.7054 12.514C8.02488 16.2653 5.10183 20.7039 3.09907 25.5827C1.02011 30.6561 -0.0333138 36.0984 0.000802937 41.5892C0.0279808 47.9405 1.53182 54.2461 4.3402 59.8836L0.181988 78.1872C0.181988 80.5117 2.0482 82.397 4.3402 82.397L22.2504 78.0041C27.8569 80.8621 34.0438 82.3659 40.3236 82.397H40.5139C45.9313 82.397 51.1766 81.3354 56.123 79.2579C60.9463 77.2299 65.3314 74.2704 69.0325 70.5454C72.7649 66.8023 75.7001 62.4278 77.7566 57.5499C79.8855 52.4981 80.9726 47.126 80.9998 41.58C81.0179 36.0066 79.9489 30.5979 77.8471 25.5095ZM22.4134 45.7899C20.0218 45.7899 18.0741 43.8222 18.0741 41.397C18.0741 38.9718 20.0218 37.0042 22.4134 37.0042C24.8051 37.0042 26.7528 38.9718 26.7528 41.397C26.7528 43.8222 24.8142 45.7899 22.4134 45.7899ZM40.4958 45.7899C38.1041 45.7899 36.1564 43.8222 36.1564 41.397C36.1564 38.9718 38.1041 37.0042 40.4958 37.0042C42.8874 37.0042 44.8352 38.9718 44.8352 41.397C44.8352 43.8222 42.8874 45.7899 40.4958 45.7899ZM58.5781 45.7899C56.1864 45.7899 54.2387 43.8222 54.2387 41.397C54.2387 38.9718 56.1864 37.0042 58.5781 37.0042C60.9697 37.0042 62.9175 38.9718 62.9175 41.397C62.9175 43.8222 60.9697 45.7899 58.5781 45.7899Z"/>
             </symbol>
@@ -115,6 +118,51 @@
         </svg>
     </g>
 
+    <!-- Burger -->
+
+    <div class="header__nav__block__burger">
+        <div class="header__nav">
+            <a href="#" class="header__link">Для начинающих </a>
+            <a href="#" class="header__link">IT-специалисты</a>
+            <a href="#" class="header__link">IT-школа</a>
+            <a href="#" class="header__link">Онлайн-обучение</a>
+            <a href="#" class="header__link">Полезное</a>
+        </div>
+        <div class="header__search__block">
+            <p>Поиск</p>
+            <svg class="header__search">
+                <use xlink:href="#search"></use>
+            </svg>
+        </div>
+        <div class="intro__social__burger">
+            <a class="social__item__burger" href="https://www.skype.com" target="_blank">
+                <svg class="social__icon__burger">
+                    <use xlink:href="#skype"></use>
+                </svg>
+            </a>
+            <a class="social__item__burger" href="https://www.instagram.com" target="_blank">
+                <svg class="social__icon__burger">
+                    <use xlink:href="#instagram"></use>
+                </svg>
+            </a>
+            <a class="social__item__burger" href="https://vk.com" target="_blank">
+                <svg class="social__icon__burger">
+                    <use xlink:href="#vkontakte"></use>
+                </svg>
+            </a>
+            <a class="social__item__burger" href="http://facebook.com" target="_blank">
+                <svg class="social__icon__burger">
+                    <use xlink:href="#facebook"></use>
+                </svg>
+            </a>
+            <a class="social__item__burger" href="http://linkedin.com" target="_blank">
+                <svg class="social__icon__burger">
+                    <use xlink:href="#linkedin"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+
     <!-- Header -->
     
     <header class="header">
@@ -126,14 +174,21 @@
                     <p>+375 (33) 34-47-999</p>
                     <p>+375 (33) 34-47-999</p>
                 </div>
-                <nav class="header__nav">
-                    <a href="#" class="header__link">Для начинающих </a>
-                    <a href="#" class="header__link">IT-специалисты</a>
-                    <a href="#" class="header__link">IT-школа</a>
-                    <a href="#" class="header__link">Онлайн-обучение</a>
-                    <a href="#" class="header__link">Полезное</a>
-                </nav>
-                <img src="img/header/header__search.png" class="header__search">
+                <div class="header__nav__block">
+                    <div class="header__nav">
+                        <a href="#" class="header__link">Для начинающих </a>
+                        <a href="#" class="header__link">IT-специалисты</a>
+                        <a href="#" class="header__link">IT-школа</a>
+                        <a href="#" class="header__link">Онлайн-обучение</a>
+                        <a href="#" class="header__link">Полезное</a>
+                    </div>
+                    <svg class="header__search">
+                        <use xlink:href="#search"></use>
+                    </svg>
+                </div>
+                <button class="burger">
+                    <span class="burger__item">Menu</span>
+                </button> 
            
             </div> <!-- /header__inner -->
         </div> <!-- /container -->
@@ -146,8 +201,8 @@
 
             <div class="intro__inner">
                 <div class="intro__content">
-                    <h1 class="intro__content__title">Курсы создания сайтов в Минске</h1>
-                    <p class="intro__content__text">Пройдите курс создание сайтов и откройте для себя востребованную профессию веб-разработчика. Сделайте крутой проект для компании — привлеките тысячи новых клиентов и начните зарабатывать онлайн.</p>
+                    <h1 class="intro__content__title title">Курсы создания сайтов в Минске</h1>
+                    <p class="intro__content__text text">Пройдите курс создание сайтов и откройте для себя востребованную профессию веб-разработчика. Сделайте крутой проект для компании — привлеките тысячи новых клиентов и начните зарабатывать онлайн.</p>
                     <div class="intro__block__btn">
                         <p class="intro__text__btn">Записаться </p>
                         <button class="btn btn-intro">--></button>
@@ -210,11 +265,11 @@
 
             <div class="info__inner">
                 <div class="info__content">
-                    <h1 class="info__content__title">Почему это выгодно</h1>
-                    <p class="info__content__text">Интернет сегодня не только площадка для общения, просмотра видео, получения полезной информации и актуальных новостей. Это работающая бизнес-платформа для продавцов и покупателей, соискателей и работодателей, заказчиков и исполнителей — уникальная платформа для товаров и услуг.</p>
-                    <p class="info__content__text">Более 5 миллиардов людей в мире пользуются интернетом: заказывают, бронируют, инвестируют, продают и покупают. После создания сайта доходность бизнеса увеличивается, как минимум, в 2-3 раза, а то и больше. К примеру, прибыль онлайн-магазина Amazon только за час составляет 10 млн. долларов. Что мешает и Вам так зарабатывать?</p>
-                    <p class="info__content__text">Если Вашей компании еще нет в интернете — скорее создавайте сайт. Это будет самое оправданное и перспективное вложение.</p>
-                    <p class="info__content__text">Не знаете, как воплотить мечту в реальность? Пройдите курсы веб-разработки и приступайте к делу.</p>
+                    <h1 class="info__content__title title">Почему это выгодно</h1>
+                    <p class="info__content__text text">Интернет сегодня не только площадка для общения, просмотра видео, получения полезной информации и актуальных новостей. Это работающая бизнес-платформа для продавцов и покупателей, соискателей и работодателей, заказчиков и исполнителей — уникальная платформа для товаров и услуг.</p>
+                    <p class="info__content__text text">Более 5 миллиардов людей в мире пользуются интернетом: заказывают, бронируют, инвестируют, продают и покупают. После создания сайта доходность бизнеса увеличивается, как минимум, в 2-3 раза, а то и больше. К примеру, прибыль онлайн-магазина Amazon только за час составляет 10 млн. долларов. Что мешает и Вам так зарабатывать?</p>
+                    <p class="info__content__text text">Если Вашей компании еще нет в интернете — скорее создавайте сайт. Это будет самое оправданное и перспективное вложение.</p>
+                    <p class="info__content__text text">Не знаете, как воплотить мечту в реальность? Пройдите курсы веб-разработки и приступайте к делу.</p>
                 </div>
                 <div class="info__img">
                     <img src="img/info/info.png" alt="" class="info__inner__img">
@@ -222,7 +277,7 @@
             </div>
             
             <div class="info__task">
-                <h1 class="info__task__title">Задачи, которые решает веб-сервис:</h1>
+                <h1 class="info__task__title title">Задачи, которые решает веб-сервис:</h1>
                 <div class="info__task__item">
                     <div class="info__task__item__block yellow">
                         <p>расширяет клиентскую базу с помощью использования инструментов по привлечению внимания целевой аудитории (SEO-продвижение, контекстная и таргетированная реклама, инфографика);</p>
@@ -250,38 +305,38 @@
     <div class="advantages">
         <div class="container">
 
-            <h1 class="advantages__title">Плюсы <br/> интернет-сервиса:</h1>
+            <h1 class="advantages__title title">Плюсы <br/> интернет-сервиса:</h1>
                 <div class="advantages__total">
                     <div class="adventages__inner">
                         <div class="advantages__item">
                             <img src="img/advantages/advantages-1.png" alt="" class="advantages__icon">
-                            <p class="advantages__item__text">Работает круглосуточно</p>
+                            <p class="advantages__item__text text">Работает круглосуточно</p>
                         </div>
                         <div class="advantages__item">
                             <img src="img/advantages/advantages-2.png" alt="" class="advantages__icon">
-                            <p class="advantages__item__text">Способен обрабатывать одновременно сотни заявок клиентов</p>
+                            <p class="advantages__item__text text">Способен обрабатывать одновременно сотни заявок клиентов</p>
                         </div>
                         <div class="advantages__item">
                             <img src="img/advantages/advantages-3.png" alt="" class="advantages__icon">
-                            <p class="advantages__item__text">Открывает доступ к просмотру полного каталога товаров и услуг</p>
+                            <p class="advantages__item__text text">Открывает доступ к просмотру полного каталога товаров и услуг</p>
                         </div>
                         <div class="advantages__item">
                             <img src="img/advantages/advantages-4.png" alt="" class="advantages__icon">
-                            <p class="advantages__item__text">Выгодно представляет бизнес и подчеркивает имидж компании</p>
+                            <p class="advantages__item__text text">Выгодно представляет бизнес и подчеркивает имидж компании</p>
                         </div>
                         <div class="advantages__item">
                             <img src="img/advantages/advantages-5.png" alt="" class="advantages__icon">
-                            <p class="advantages__item__text">Помогает заключать сделки с заказчиками, которые находятся даже в отдаленных точках мира</p>
+                            <p class="advantages__item__text text">Помогает заключать сделки с заказчиками, которые находятся даже в отдаленных точках мира</p>
                         </div>
                         <div class="advantages__item">
                             <img src="img/advantages/advantages-6.png" alt="" class="advantages__icon">
-                            <p class="advantages__item__text">Надежный источник достоверной информации для покупателей</p>
+                            <p class="advantages__item__text text">Надежный источник достоверной информации для покупателей</p>
                         </div>
                     </div>
 
                     <div class="advantages__content">
-                        <p class="advantages__content__text">Научиться создавать сайты может каждый, только нужно время. Главное начать и чем раньше, тем лучше.</p>
-                        <p class="advantages__content__text">Наши опытные web-разработчики готовы щедро делиться знаниями, которые Вы легко примените к бизнесу и создадите, отвечающий популярным запросам пользователей, личным вкусам и предпочтениям сайт.</p>
+                        <p class="advantages__content__text text">Научиться создавать сайты может каждый, только нужно время. Главное начать и чем раньше, тем лучше.</p>
+                        <p class="advantages__content__text text">Наши опытные web-разработчики готовы щедро делиться знаниями, которые Вы легко примените к бизнесу и создадите, отвечающий популярным запросам пользователей, личным вкусам и предпочтениям сайт.</p>
                     </div>
                 </div>
         </div> <!-- /container -->
@@ -294,16 +349,22 @@
             
             <div class="features__inner">
                 <div class="features__content">
-                    <h1 class="features__content__title">Профессия <br/>веб-разработчика — беспроигрышный вариант</h1>
-                    <p class="features__content__text">Малознакомая лет 10 назад специальность, сейчас — топовое IT-направление, в которое вкладываются огромные средства.</p>
+                    <h1 class="features__content__title title">Профессия <br/>веб-разработчика — беспроигрышный вариант</h1>
+                    <p class="features__content__text text">Малознакомая лет 10 назад специальность, сейчас — топовое IT-направление, в которое вкладываются огромные средства.</p>
                 </div> 
                 <div class="features__item">
-                    <h2 class="features__item__title">Востребованность</h2>
-                    <p class="features__item__text">Веб-разработка — бурно развивающаяся сфера, в которой при этом остро ощущается дефицит кадров. Как показывает статистика «Рейтинга Рунета» и CMS Magazine, только 28% компаний и веб-студий полноценно обеспечены такими специалистами. Востребованность профессии подтверждает и многочисленное количество вакансий на различных job-ресурсах. Это первый неоспоримый довод, чтобы пойти на курсы разработки сайтов в Минске.</p>
-                    <h2 class="features__item__title">Достойная оплата</h2>
-                    <p class="features__item__text">Среднемесячная заработная плата веб-разработчика — составляет от 2 тыс. руб. и выше, средняя – 5 тыс. Из других плюсов — карьерный рост, работа удаленно из дома, возможность совмещения с учебой и другими занятиями.</p>
-                    <h2 class="features__item__title">Обучение с нуля</h2>
-                    <p class="features__item__text">Освоить профессию можно в 20, 30 и в 40 лет. Главное — желание. Записывайтесь на курсы по созданию сайтов с нуля от агентства интернет-маркетинга Web Focus и обучайтесь трендовой профессии. Заказчики ждут только Вас. Не откладывайте на потом, звоните прямо сейчас.</p>
+                    <div>
+                        <h2 class="features__item__title subtitle">Востребованность</h2>
+                        <p class="features__item__text text">Веб-разработка — бурно развивающаяся сфера, в которой при этом остро ощущается дефицит кадров. Как показывает статистика «Рейтинга Рунета» и CMS Magazine, только 28% компаний и веб-студий полноценно обеспечены такими специалистами. Востребованность профессии подтверждает и многочисленное количество вакансий на различных job-ресурсах. Это первый неоспоримый довод, чтобы пойти на курсы разработки сайтов в Минске.</p>
+                    </div>
+                    <div>
+                        <h2 class="features__item__title subtitle">Достойная оплата</h2>
+                        <p class="features__item__text text">Среднемесячная заработная плата веб-разработчика — составляет от 2 тыс. руб. и выше, средняя – 5 тыс. Из других плюсов — карьерный рост, работа удаленно из дома, возможность совмещения с учебой и другими занятиями.</p>
+                    </div>
+                    <div>
+                        <h2 class="features__item__title subtitle">Обучение с нуля</h2>
+                        <p class="features__item__text text">Освоить профессию можно в 20, 30 и в 40 лет. Главное — желание. Записывайтесь на курсы по созданию сайтов с нуля от агентства интернет-маркетинга Web Focus и обучайтесь трендовой профессии. Заказчики ждут только Вас. Не откладывайте на потом, звоните прямо сейчас.</p>
+                    </div>
                 </div>
             </div>
 
@@ -317,17 +378,17 @@
             
             <div class="reference__inner">
                 <div class="reference__content">
-                    <h1 class="reference__content__title">Курсы по созданию сайтов в Минске</h1>
-                    <p class="reference__content__text">Услуги веб-мастера — дорогое удовольствие. Станьте им сами и сэкономьте на найме дополнительных сотрудников. Пройдите курсы разработки сайтов, и продвигайте бизнес в интернете.</p>
-                    <h3 class="reference__content__subtitle">Учитесь у профессионалов</h3>
-                    <p class="reference__content__text">Чтобы сайт приносил ожидаемые результаты, обучайтесь только у специалистов с многолетним практическим опытом в области разработки и верстки. Тогда средства, инвестированные в знания, окупятся втройне.</p>
-                    <p class="reference__content__text">Сотни онлайн-сервисов в сети предлагают использовать автоматические конструкторы сайтов без возможности редактирования кода. Несмотря на привлекательную рекламу, создать эффектный сайт с помощью такого сервиса не удастся, потому что он шаблонный и бесплатный, а значит с доменом второго и третьего уровня и невозможностью добавлять новые плагины, скрипты и коды.</p>
-                    <p class="reference__content__text">Вряд ли такой «корявый» сайт заинтересует клиентов. Помимо этого, подобные интернет-площадки всегда занижаются в поисковой выдаче, что делает его заведомо неконкурентным.</p>
+                    <h1 class="reference__content__title title">Курсы по созданию сайтов в Минске</h1>
+                    <p class="reference__content__text text">Услуги веб-мастера — дорогое удовольствие. Станьте им сами и сэкономьте на найме дополнительных сотрудников. Пройдите курсы разработки сайтов, и продвигайте бизнес в интернете.</p>
+                    <h3 class="reference__content__subtitle subtitle">Учитесь у профессионалов</h3>
+                    <p class="reference__content__text text">Чтобы сайт приносил ожидаемые результаты, обучайтесь только у специалистов с многолетним практическим опытом в области разработки и верстки. Тогда средства, инвестированные в знания, окупятся втройне.</p>
+                    <p class="reference__content__text text">Сотни онлайн-сервисов в сети предлагают использовать автоматические конструкторы сайтов без возможности редактирования кода. Несмотря на привлекательную рекламу, создать эффектный сайт с помощью такого сервиса не удастся, потому что он шаблонный и бесплатный, а значит с доменом второго и третьего уровня и невозможностью добавлять новые плагины, скрипты и коды.</p>
+                    <p class="reference__content__text text">Вряд ли такой «корявый» сайт заинтересует клиентов. Помимо этого, подобные интернет-площадки всегда занижаются в поисковой выдаче, что делает его заведомо неконкурентным.</p>
                 </div>
                 <div class="reference__img">
                     <img src="img/reference/reference.png" alt="" class="reference__icon">
-                    <h3 class="reference__img__title">Записывайтесь на обучение в Web Focus</h3>
-                    <p class="reference__img__text">Среднемесячная заработная плата веб-разработчика — составляет от 2 тыс. руб. и выше, средняя – 5 тыс. Из других плюсов — карьерный рост, работа удаленно из дома, возможность совмещения с учебой и другими занятиями.</p>
+                    <h3 class="reference__img__title subtitle">Записывайтесь на обучение в Web Focus</h3>
+                    <p class="reference__img__text text">Среднемесячная заработная плата веб-разработчика — составляет от 2 тыс. руб. и выше, средняя – 5 тыс. Из других плюсов — карьерный рост, работа удаленно из дома, возможность совмещения с учебой и другими занятиями.</p>
                 </div>
             </div>
        
@@ -340,15 +401,23 @@
         <div class="container">
             
             <div class="сonsultation__inner">
-                <h2 class="сonsultation__title">Получить консультацию</h2>
+                <h2 class="сonsultation__title subtitle">Получить консультацию</h2>
                 <form class="consultation__form">
-                    <input type="text" placeholder='Имя' class="form form__name">
-                    <input type='text' placeholder='Телефон' required pattern='\s{0,}\+{1,1}375\s{0,}(([2]{1}([5]{1}|[9]{1}))|([3]{1}[3]{1})|([4]{1}[4]{1}))\s{0,}[0-9]{3,3}\s{0,}[0-9]{4,4}' class="form form__phone">
-                    <input type="text" placeholder='Email' class="form form__email">
-                    <span class="btn__text">Отправить</span>
-                    <button type="submit" class="btn btn-form">--></button> <br/>
-                    <input type="checkbox" id="checkbox" required>
-                    <label for="checkbox" class="form__checkbox">Даю согласие на обработку персональных данных</label>
+                        <input type="text" placeholder='Имя' class="form form__name">
+                        <input type='text' placeholder='Телефон' required pattern='\s{0,}\+{1,1}375\s{0,}(([2]{1}([5]{1}|[9]{1}))|([3]{1}[3]{1})|([4]{1}[4]{1}))\s{0,}[0-9]{3,3}\s{0,}[0-9]{4,4}' class="form form__phone">
+                        <input type="text" placeholder='Email' class="form form__email">
+                        <div class="btn__form">
+                            <span class="btn__text">Отправить</span>
+                            <button type="submit" class="btn btn-form">--></button>
+                        </div>
+                        <div class="block__checkbox">
+                            <input type="checkbox" id="checkbox" required>
+                            <label for="checkbox" class="form__checkbox">Даю согласие на обработку персональных данных</label>
+                        </div>
+                        <div class="btn__form__phone">
+                            <span class="btn__text">Отправить</span>
+                            <button type="submit" class="btn btn-form">--></button><br/>
+                        </div>
                 </form> 
             </div>
 
@@ -359,34 +428,34 @@
     <div class="offer">
         <div class="container">
             
-            <h1 class="offer__title">Что мы предлагаем</h1>
-            <p class="offer__text">Интерактивный курс создание сайтов от агентства интернет-маркетинга Web Focus разработан специально для тех, кто еще не знаком с этой сферой и для продолжающих обучение веб-мастеров.</p>
-            <p class="offer__text">Мы подготовили программу, которая включает теорию и интенсивную практику. Вас ждет базовый и продвинутый курс по html и css, работа с современными IT-технологиями.</p>
-            <h3 class="offer__subtitle">На курсе по созданию сайтов Вы научитесь:</h3>
+            <h1 class="offer__title title">Что мы предлагаем</h1>
+            <p class="offer__text text">Интерактивный курс создание сайтов от агентства интернет-маркетинга Web Focus разработан специально для тех, кто еще не знаком с этой сферой и для продолжающих обучение веб-мастеров.</p>
+            <p class="offer__text text">Мы подготовили программу, которая включает теорию и интенсивную практику. Вас ждет базовый и продвинутый курс по html и css, работа с современными IT-технологиями.</p>
+            <h3 class="offer__subtitle subtitle">На курсе по созданию сайтов Вы научитесь:</h3>
             <div class="offer__content">
                 <div class="offer__item">
                     <img src="img/offer/offer-1.png" alt="" class="offer__item__icon">
-                    <p class="offer__item__text">Базовым навыкам работы с HTML, CSS, JS</p>
+                    <p class="offer__item__text text">Базовым навыкам работы с HTML, CSS, JS</p>
                 </div>
                 <div class="offer__item">
                     <img src="img/offer/offer-2.png" alt="" class="offer__item__icon">
-                    <p class="offer__item__text">Управлять блоками в CMS</p>
+                    <p class="offer__item__text text">Управлять блоками в CMS</p>
                 </div>
                 <div class="offer__item">
                     <img src="img/offer/offer-3.png" alt="" class="offer__item__icon">
-                    <p class="offer__item__text">Создавать интерактивные страницы</p>
+                    <p class="offer__item__text text">Создавать интерактивные страницы</p>
                 </div>
                 <div class="offer__item">
                     <img src="img/offer/offer-4.png" alt="" class="offer__item__icon">
-                    <p class="offer__item__text">Программировать на языке JavaScript</p>
+                    <p class="offer__item__text text">Программировать на языке JavaScript</p>
                 </div>
                 <div class="offer__item">
                     <img src="img/offer/offer-5.png" alt="" class="offer__item__icon">
-                    <p class="offer__item__text">Работать с виджетами, медиафайлами, анимацией, формами</p>
+                    <p class="offer__item__text text">Работать с виджетами, медиафайлами, анимацией, формами</p>
                 </div>
                 <div class="offer__item">
                     <img src="img/offer/offer-6.png" alt="" class="offer__item__icon">
-                    <p class="offer__item__text">Готовить макеты к верстке и многое другое</p>
+                    <p class="offer__item__text text">Готовить макеты к верстке и многое другое</p>
                 </div>
             </div>
 
@@ -399,18 +468,30 @@
 
             <div class="others__inner">
                 <div class="others__inner__left">
-                    <h1 class="others__inner__titile">Только полезная информация</h1>
-                    <p class="others__inner__text one">Мы ценим время. А потому составили уроки таким образом, чтобы Вы могли получать только нужные знания — «без воды». То, что Вы можете изучить, прочитав десятки книг, мы вместили в несколько компактных лекций.</p>
-                    <h3 class="others__inner__subtitle">Высокооплачиваемая профессия</h3>
-                    <p class="others__inner__text two">Мы — первая ступень в Вашей удачной карьере. На курсе по созданию сайтов Вы освоите знания, с которыми сможете начать работать веб-разработчиком и получать за это хорошие гонорары.</p>
+                    <h1 class="others__inner__titile title">Только полезная информация</h1>
+                    <p class="others__inner__text text one">Мы ценим время. А потому составили уроки таким образом, чтобы Вы могли получать только нужные знания — «без воды». То, что Вы можете изучить, прочитав десятки книг, мы вместили в несколько компактных лекций.</p>
+                    <div>
+                        <h3 class="others__inner__subtitle subtitle">Высокооплачиваемая профессия</h3>
+                        <p class="others__inner__text text two">Мы — первая ступень в Вашей удачной карьере. На курсе по созданию сайтов Вы освоите знания, с которыми сможете начать работать веб-разработчиком и получать за это хорошие гонорары.</p>
+                    </div>
                 </div>
                 <div class="others__inner__right">
-                    <h3 class="others__inner__subtitle top">Много практики</h3>
-                    <p class="others__inner__text free">Мы хотим, чтоб Вы не только знали, но и умели. После каждого занятия Вы будете выполнять практические задания под руководством наставника. В процессе обучения Вы будете создавать собственные проекты.</p>
-                    <h3 class="others__inner__subtitle">Поддержка наставников</h3>
-                    <p class="others__inner__text four">Мы всегда на связи. Вы сможете задавать преподавателям вопросы по теме и быстро получать на них ответы. Нам важно не продать уроки, а научить Вас создавать сайты.</p>
-                    <h3 class="others__inner__subtitle">Быстрый старт</h3>
-                    <p class="others__inner__text five">Мы заинтересованы в Вашем успехе. Занимайтесь разработкой сайта параллельно с прохождением обучения. Выполняйте задания, тестируйте инструменты на своей площадке и получайте результат.</p>
+                    <div class="others__inner__right__show">
+                        <h3 class="others__inner__subtitle subtitle">Высокооплачиваемая профессия</h3>
+                        <p class="others__inner__text tex two">Мы — первая ступень в Вашей удачной карьере. На курсе по созданию сайтов Вы освоите знания, с которыми сможете начать работать веб-разработчиком и получать за это хорошие гонорары.</p>
+                    </div>
+                    <div>
+                        <h3 class="others__inner__subtitle subtitle top">Много практики</h3>
+                        <p class="others__inner__text text free">Мы хотим, чтоб Вы не только знали, но и умели. После каждого занятия Вы будете выполнять практические задания под руководством наставника. В процессе обучения Вы будете создавать собственные проекты.</p>
+                    </div>
+                    <div>
+                        <h3 class="others__inner__subtitle subtitle">Поддержка наставников</h3>
+                        <p class="others__inner__text text four">Мы всегда на связи. Вы сможете задавать преподавателям вопросы по теме и быстро получать на них ответы. Нам важно не продать уроки, а научить Вас создавать сайты.</p>
+                    </div>
+                    <div>
+                        <h3 class="others__inner__subtitle subtitle">Быстрый старт</h3>
+                        <p class="others__inner__text text five">Мы заинтересованы в Вашем успехе. Занимайтесь разработкой сайта параллельно с прохождением обучения. Выполняйте задания, тестируйте инструменты на своей площадке и получайте результат.</p>
+                    </div>
                 </div>
             </div>
 
@@ -423,7 +504,7 @@
         <div class="container">
 
             <div class="blog__inner">
-                <h1 class="blog__inner__title">Блог</h1>
+                <h1 class="blog__inner__title title">Блог</h1>
                 <div class="blog__inner__block">
                     <p class="blog__inner__text">Посмотреть все</p>
                     <button class="btn btn-slider">--></button>
@@ -433,17 +514,17 @@
                 <div class="blog__slider__inner">
                     <div class="blog__item">
                         <img src="img/blog/blog-1.png" alt="" class="blog__img">
-                        <p class="blog__date">12 янв 2021</p>
+                        <p class="blog__date text">12 янв 2021</p>
                         <h5 class="blog__title">Этапы разработки сайта: нюансы</h5>
                     </div>
                     <div class="blog__item">
                         <img src="img/blog/blog-2.png" alt="" class="blog__img">
-                        <p class="blog__date">12 янв 2021</p>
+                        <p class="blog__date text">12 янв 2021</p>
                         <h5 class="blog__title">Frontend, Backend или Fullstack: что выбрать</h5>
                     </div>
                     <div class="blog__item">
                         <img src="img/blog/blog-3.png" alt="" class="blog__img">
-                        <p class="blog__date">12 янв 2021</p>
+                        <p class="blog__date text">12 янв 2021</p>
                         <h5 class="blog__title">Название статьи</h5>
                     </div>
                 </div>
@@ -470,7 +551,7 @@
                 </section>
 
                 <section class="footer__nav">
-                    <h1 class="footer__nav__title">Навигация</h1>
+                    <h1 class="footer__nav__title subtitle">Навигация</h1>
                     <a href="#" class="footer__nav__link">Для начинающих</>
                     <a href="#" class="footer__nav__link">IT-специалисты</a>
                     <a href="#" class="footer__nav__link">IT-школа</a>
@@ -479,7 +560,7 @@
                 </section>
 
                 <section class="footer__contacts">
-                    <h1 class="footer__contacts__title">Контакты</h1>
+                    <h1 class="footer__contacts__title subtitle">Контакты</h1>
                     <p class="footer__phone">+375 (33) 32-44-000</p>
                     <p class="footer__email">info@bpmcloud.by</p>
                     <address class="footer__address">Пр-т Независимости, дом 77, офис 53</address>
@@ -518,6 +599,8 @@
         
         </div> <!-- /container -->
     </footer> <!-- /footer -->
+
+    <script src="script.js"></script>
 </body>
 </html>
 
