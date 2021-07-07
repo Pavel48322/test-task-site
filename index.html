@@ -118,51 +118,6 @@
         </svg>
     </g>
 
-    <!-- Burger -->
-
-    <div class="header__nav__block__burger">
-        <div class="header__nav">
-            <a href="#" class="header__link">Для начинающих </a>
-            <a href="#" class="header__link">IT-специалисты</a>
-            <a href="#" class="header__link">IT-школа</a>
-            <a href="#" class="header__link">Онлайн-обучение</a>
-            <a href="#" class="header__link">Полезное</a>
-        </div>
-        <div class="header__search__block">
-            <p>Поиск</p>
-            <svg class="header__search">
-                <use xlink:href="#search"></use>
-            </svg>
-        </div>
-        <div class="intro__social__burger">
-            <a class="social__item__burger" href="https://www.skype.com" target="_blank">
-                <svg class="social__icon__burger">
-                    <use xlink:href="#skype"></use>
-                </svg>
-            </a>
-            <a class="social__item__burger" href="https://www.instagram.com" target="_blank">
-                <svg class="social__icon__burger">
-                    <use xlink:href="#instagram"></use>
-                </svg>
-            </a>
-            <a class="social__item__burger" href="https://vk.com" target="_blank">
-                <svg class="social__icon__burger">
-                    <use xlink:href="#vkontakte"></use>
-                </svg>
-            </a>
-            <a class="social__item__burger" href="http://facebook.com" target="_blank">
-                <svg class="social__icon__burger">
-                    <use xlink:href="#facebook"></use>
-                </svg>
-            </a>
-            <a class="social__item__burger" href="http://linkedin.com" target="_blank">
-                <svg class="social__icon__burger">
-                    <use xlink:href="#linkedin"></use>
-                </svg>
-            </a>
-        </div>
-    </div>
-
     <!-- Header -->
     
     <header class="header">
@@ -174,18 +129,53 @@
                     <p>+375 (33) 34-47-999</p>
                     <p>+375 (33) 34-47-999</p>
                 </div>
+                
                 <div class="header__nav__block">
-                    <div class="header__nav">
-                        <a href="#" class="header__link">Для начинающих </a>
-                        <a href="#" class="header__link">IT-специалисты</a>
-                        <a href="#" class="header__link">IT-школа</a>
-                        <a href="#" class="header__link">Онлайн-обучение</a>
-                        <a href="#" class="header__link">Полезное</a>
+                    <div class="header__nav">  
+                        <ul class="list__nav">
+                            <li class="header__link one__link">Для начинающих</li>
+                            <li class="header__link two__link active__two__link">IT-специалисты</li>
+                                <ul class="list__nav__one two__active">
+                                    <li class="list__nav__one__title">IT-специалисты</li>
+                                    <li class="list__nav__one__text active__link" >Front-end разработчик</li>
+                                        <ul class="list__nav__two two__nav__link__active">
+                                            <li class="list__nav__two__text">Введение и основы HTML</li>
+                                            <li class="list__nav__two__text">Основы CSS</li>
+                                            <li class="list__nav__two__text">Верстка сайта: HTML+CSS</li>
+                                            <span class="close"></span>
+                                        </ul>
+                                    <li class="list__nav__one__text active__link">Back-end разработчик</li>
+                                        <ul class="list__nav__two two__nav__link__active">
+                                            <li class="list__nav__two__text">Курс ОС семейства UNUX (Linux, Mac)</li>
+                                            <li class="list__nav__two__text">Программирование на PHP</li>
+                                            <li class="list__nav__two__text">MySQL с нуля</li>
+                                            <li class="list__nav__two__text">Базовые знания и возможности AJAX, Json, XML</li>
+                                            <span class="close"></span>
+                                        </ul>
+                                    <li class="list__nav__one__text">FullStack разработчик</li>
+                                    <li class="list__nav__one__text">Верстальщик</li>
+                                    <li class="list__nav__one__text">Курс контент-менеджера</li>
+                                        <ul class="list__nav__two">
+                                            <li class="list__nav__two__text">Работа на CMS Wordpress</li>
+                                            <li class="list__nav__two__text">Работа на CMS Битрикс</li>
+                                            <li class="list__nav__two__text">Работа на CMS Drupal</li>
+                                            <li class="list__nav__two__text">Работа на CMS Joomla</li>
+                                            <li class="list__nav__two__text">Работа на CMS MODX</li>
+                                            <li class="list__nav__two__text">Работа на CMS Opencart</li>
+                                            <li class="list__nav__two__text">Работа на CMS Tilda</li>
+                                        </ul>
+                                </ul>
+                            <li class="header__link three__link">IT-школа</li>
+                            <li class="header__link four__link">Онлайн-обучение</li>
+                            <li class="header__link five__link">Полезное</li>
+                            <svg class="header__search">
+                                <use xlink:href="#search"></use>
+                            </svg>
+                            
+                        </ul>
                     </div>
-                    <svg class="header__search">
-                        <use xlink:href="#search"></use>
-                    </svg>
                 </div>
+
                 <button class="burger">
                     <span class="burger__item">Menu</span>
                 </button> 
