@@ -145,7 +145,7 @@
                     <div class="btn__form__modal">
                         <span class="btn__text__modal">Отправить</span>
                         <a href="#" class="btn btn-form">
-                            <span class="button__text">--></span>
+                            <span class="button__text">	&#8594;</span>
                         </a>
                     </div>
                     <svg data-close class="close__modal">
@@ -171,34 +171,70 @@
                     <p>+375 (33) 34-47-999</p>
                 </div>
                 
-                <div class="header__nav__block background" data-color="while">
+                <div class="header__nav__block ">
                     <div class="header__nav">  
                         <ul class="list__nav">
                             <li class="header__link one__link">Для начинающих</li>
-                            <li class="header__link two__link active__two__link">IT-специалисты</li>
-                                <ul class="list__nav__one two__active">
-                                    <li class="list__nav__one__title">IT-специалисты</li>
-                                    <li class="list__nav__one__text active__link" >Front-end разработчик</li>
-                                        <ul class="list__nav__two two__nav__link__active">
+                                <ul class="list__nav__one">
+                                    <span data-close class="close"></span>
+                                    <li class="list__nav__one__title">Для начинающих</li>
+                                    <li class="list__nav__one__text" >Front-end разработчик</li>
+                                        <ul class="list__nav__two__subsection two__nav__link__active">
                                             <li class="list__nav__two__text">Введение и основы HTML</li>
                                             <li class="list__nav__two__text">Основы CSS</li>
                                             <li class="list__nav__two__text">Верстка сайта: HTML+CSS</li>
-                                            <svg class="close">
-                                                <use xlink:href="#window"></use>
-                                            </svg>
                                         </ul>
-                                    <li class="list__nav__one__text active__link">Back-end разработчик</li>
-                                        <ul class="list__nav__two two__nav__link__active">
+                                    <li class="list__nav__one__text">Back-end разработчик</li>
+                                        <ul class="list__nav__two__subsection two__nav__link__active">
                                             <li class="list__nav__two__text">Курс ОС семейства UNUX (Linux, Mac)</li>
                                             <li class="list__nav__two__text">Программирование на PHP</li>
                                             <li class="list__nav__two__text">MySQL с нуля</li>
                                             <li class="list__nav__two__text">Базовые знания и возможности AJAX, Json, XML</li>
-                                            <span data-close class="close"></span>
                                         </ul>
                                     <li class="list__nav__one__text">FullStack разработчик</li>
-                                    <li class="list__nav__one__text">Верстальщик</li>
+                                    <ul class="list__nav__two__subsection two__nav__link__active">
+                                        <li class="list__nav__two__text">Введение и основы HTML</li>
+                                            <li class="list__nav__two__text">Основы CSS</li>
+                                            <li class="list__nav__two__text">Верстка сайта: HTML+CSS</li>
+                                    </ul>
+                                    <li class="list__nav__one__text block">Верстальщик</li>
                                     <li class="list__nav__one__text">Курс контент-менеджера</li>
-                                        <ul class="list__nav__two">
+                                        <ul class="list__nav__two__subsection">
+                                            <li class="list__nav__two__text">Работа на CMS Wordpress</li>
+                                            <li class="list__nav__two__text">Работа на CMS Битрикс</li>
+                                            <li class="list__nav__two__text">Работа на CMS Drupal</li>
+                                            <li class="list__nav__two__text">Работа на CMS Joomla</li>
+                                            <li class="list__nav__two__text">Работа на CMS MODX</li>
+                                            <li class="list__nav__two__text">Работа на CMS Opencart</li>
+                                            <li class="list__nav__two__text">Работа на CMS Tilda</li>
+                                        </ul>
+                                </ul>
+                            <li class="header__link two__link">IT-специалисты</li>
+                                <ul class="list__nav__one">
+                                    <span data-close class="close"></span>
+                                    <li class="list__nav__one__title">IT-специалисты</li>
+                                    <li class="list__nav__one__text" >Front-end разработчик</li>
+                                        <ul class="list__nav__two__subsection two__nav__link__active">
+                                            <li class="list__nav__two__text">Введение и основы HTML</li>
+                                            <li class="list__nav__two__text">Основы CSS</li>
+                                            <li class="list__nav__two__text">Верстка сайта: HTML+CSS</li>
+                                        </ul>
+                                    <li class="list__nav__one__text">Back-end разработчик</li>
+                                        <ul class="list__nav__two__subsection two__nav__link__active">
+                                            <li class="list__nav__two__text">Курс ОС семейства UNUX (Linux, Mac)</li>
+                                            <li class="list__nav__two__text">Программирование на PHP</li>
+                                            <li class="list__nav__two__text">MySQL с нуля</li>
+                                            <li class="list__nav__two__text">Базовые знания и возможности AJAX, Json, XML</li>
+                                        </ul>
+                                    <li class="list__nav__one__text">FullStack разработчик</li>
+                                    <ul class="list__nav__two__subsection two__nav__link__active">
+                                        <li class="list__nav__two__text">Введение и основы HTML</li>
+                                            <li class="list__nav__two__text">Основы CSS</li>
+                                            <li class="list__nav__two__text">Верстка сайта: HTML+CSS</li>
+                                    </ul>
+                                    <li class="list__nav__one__text block">Верстальщик</li>
+                                    <li class="list__nav__one__text">Курс контент-менеджера</li>
+                                        <ul class="list__nav__two__subsection">
                                             <li class="list__nav__two__text">Работа на CMS Wordpress</li>
                                             <li class="list__nav__two__text">Работа на CMS Битрикс</li>
                                             <li class="list__nav__two__text">Работа на CMS Drupal</li>
@@ -209,9 +245,116 @@
                                         </ul>
                                 </ul>
                             <li class="header__link three__link">IT-школа</li>
+                                <ul class="list__nav__one" >
+                                    <span data-close class="close"></span>
+                                    <li class="list__nav__one__title">IT-школа</li>
+                                    <li class="list__nav__one__text" >Front-end разработчик</li>
+                                        <ul class="list__nav__two__subsection two__nav__link__active">
+                                            <li class="list__nav__two__text">Введение и основы HTML</li>
+                                            <li class="list__nav__two__text">Основы CSS</li>
+                                            <li class="list__nav__two__text">Верстка сайта: HTML+CSS</li>
+                                        </ul>
+                                    <li class="list__nav__one__text">Back-end разработчик</li>
+                                        <ul class="list__nav__two__subsection two__nav__link__active">
+                                            <li class="list__nav__two__text">Курс ОС семейства UNUX (Linux, Mac)</li>
+                                            <li class="list__nav__two__text">Программирование на PHP</li>
+                                            <li class="list__nav__two__text">MySQL с нуля</li>
+                                            <li class="list__nav__two__text">Базовые знания и возможности AJAX, Json, XML</li>
+                                        </ul>
+                                    <li class="list__nav__one__text">FullStack разработчик</li>
+                                    <ul class="list__nav__two__subsection two__nav__link__active">
+                                        <li class="list__nav__two__text">Введение и основы HTML</li>
+                                            <li class="list__nav__two__text">Основы CSS</li>
+                                            <li class="list__nav__two__text">Верстка сайта: HTML+CSS</li>
+                                    </ul>
+                                    <li class="list__nav__one__text block">Верстальщик</li>
+                                    <li class="list__nav__one__text">Курс контент-менеджера</li>
+                                        <ul class="list__nav__two__subsection">
+                                            <li class="list__nav__two__text">Работа на CMS Wordpress</li>
+                                            <li class="list__nav__two__text">Работа на CMS Битрикс</li>
+                                            <li class="list__nav__two__text">Работа на CMS Drupal</li>
+                                            <li class="list__nav__two__text">Работа на CMS Joomla</li>
+                                            <li class="list__nav__two__text">Работа на CMS MODX</li>
+                                            <li class="list__nav__two__text">Работа на CMS Opencart</li>
+                                            <li class="list__nav__two__text">Работа на CMS Tilda</li>
+                                        </ul>
+                                </ul>
                             <li class="header__link four__link">Онлайн-обучение</li>
+                                <ul class="list__nav__one" >
+                                    <span data-close class="close"></span>
+                                    <li class="list__nav__one__title">Онлайн-обучение</li>
+                                    <li class="list__nav__one__text" >Front-end разработчик</li>
+                                        <ul class="list__nav__two__subsection two__nav__link__active">
+                                            <li class="list__nav__two__text">Введение и основы HTML</li>
+                                            <li class="list__nav__two__text">Основы CSS</li>
+                                            <li class="list__nav__two__text">Верстка сайта: HTML+CSS</li>
+                                        </ul>
+                                    <li class="list__nav__one__text">Back-end разработчик</li>
+                                        <ul class="list__nav__two__subsection two__nav__link__active">
+                                            <li class="list__nav__two__text">Курс ОС семейства UNUX (Linux, Mac)</li>
+                                            <li class="list__nav__two__text">Программирование на PHP</li>
+                                            <li class="list__nav__two__text">MySQL с нуля</li>
+                                            <li class="list__nav__two__text">Базовые знания и возможности AJAX, Json, XML</li>
+                                        </ul>
+                                    <li class="list__nav__one__text">FullStack разработчик</li>
+                                    <ul class="list__nav__two__subsection two__nav__link__active">
+                                        <li class="list__nav__two__text">Введение и основы HTML</li>
+                                            <li class="list__nav__two__text">Основы CSS</li>
+                                            <li class="list__nav__two__text">Верстка сайта: HTML+CSS</li>
+                                    </ul>
+                                    <li class="list__nav__one__text block">Верстальщик</li>
+                                    <li class="list__nav__one__text">Курс контент-менеджера</li>
+                                        <ul class="list__nav__two__subsection">
+                                            <li class="list__nav__two__text">Работа на CMS Wordpress</li>
+                                            <li class="list__nav__two__text">Работа на CMS Битрикс</li>
+                                            <li class="list__nav__two__text">Работа на CMS Drupal</li>
+                                            <li class="list__nav__two__text">Работа на CMS Joomla</li>
+                                            <li class="list__nav__two__text">Работа на CMS MODX</li>
+                                            <li class="list__nav__two__text">Работа на CMS Opencart</li>
+                                            <li class="list__nav__two__text">Работа на CMS Tilda</li>
+                                        </ul>
+                                </ul>
                             <li class="header__link five__link">Полезное</li>
-                            <li>
+                                <ul class="list__nav__one" >
+                                    <span data-close class="close"></span>
+                                    <li class="list__nav__one__title">Полезное</li>
+                                    <li class="list__nav__one__text" >Front-end разработчик</li>
+                                        <ul class="list__nav__two__subsection two__nav__link__active">
+                                            <li class="list__nav__two__text">Введение и основы HTML</li>
+                                            <li class="list__nav__two__text">Основы CSS</li>
+                                            <li class="list__nav__two__text">Верстка сайта: HTML+CSS</li>
+                                        </ul>
+                                    <li class="list__nav__one__text">Back-end разработчик</li>
+                                        <ul class="list__nav__two__subsection two__nav__link__active">
+                                            <li class="list__nav__two__text">Курс ОС семейства UNUX (Linux, Mac)</li>
+                                            <li class="list__nav__two__text">Программирование на PHP</li>
+                                            <li class="list__nav__two__text">MySQL с нуля</li>
+                                            <li class="list__nav__two__text">Базовые знания и возможности AJAX, Json, XML</li>
+                                        </ul>
+                                    <li class="list__nav__one__text">FullStack разработчик</li>
+                                    <ul class="list__nav__two__subsection two__nav__link__active">
+                                        <li class="list__nav__two__text">Введение и основы HTML</li>
+                                            <li class="list__nav__two__text">Основы CSS</li>
+                                            <li class="list__nav__two__text">Верстка сайта: HTML+CSS</li>
+                                    </ul>
+                                    <li class="list__nav__one__text block">Верстальщик</li>
+                                    <ul class="list__nav__two__subsection two__nav__link__active">
+                                        <li class="list__nav__two__text">Введение и основы HTML</li>
+                                            <li class="list__nav__two__text">Основы CSS</li>
+                                            <li class="list__nav__two__text">Верстка сайта: HTML+CSS</li>
+                                    </ul>
+                                    <li class="list__nav__one__text">Курс контент-менеджера</li>
+                                        <ul class="list__nav__two__subsection">
+                                            <li class="list__nav__two__text">Работа на CMS Wordpress</li>
+                                            <li class="list__nav__two__text">Работа на CMS Битрикс</li>
+                                            <li class="list__nav__two__text">Работа на CMS Drupal</li>
+                                            <li class="list__nav__two__text">Работа на CMS Joomla</li>
+                                            <li class="list__nav__two__text">Работа на CMS MODX</li>
+                                            <li class="list__nav__two__text">Работа на CMS Opencart</li>
+                                            <li class="list__nav__two__text">Работа на CMS Tilda</li>
+                                        </ul>
+                                </ul>
+                            <li class="header__nav__footer__one">
                                 <div class="header__nav__footer" >
                                     <input type="search" placeholder="Поиск" class="input__search">
                                     <svg class="header__search">
@@ -275,7 +418,7 @@
                     <div class="intro__block__btn">
                         <p class="intro__text__btn">Записаться </p>
                         <a href="#" class="btn btn-intro">
-                            <span class="button__text">--></span>
+                            <span class="button__text">	&#8594;</span>
                         </a>
                     </div>
                 </div>
@@ -482,9 +625,9 @@
                         <input type="text" placeholder='Email' class="form form__email">
                         <div class="btn__form">
                             <p class="btn__text">Отправить</p>
-                            <a href="#" class="btn btn-form">
-                                <span class="button__text">--></span>
-                            </a>
+                            <button href="#" class="btn btn-form">
+                                <span class="button__text">	&#8594;</span>
+                            </button>
                         </div>
                         <div class="block__checkbox background" data-color="blue">
                             <input type="checkbox" id="checkbox" required>
@@ -492,9 +635,9 @@
                         </div>
                         <div class="btn__form__phone">
                             <p class="btn__text">Отправить</p>
-                            <a href="#" class="btn btn-form">
-                                <span class="button__text">--></span>
-                            </a>
+                            <button href="#" class="btn btn-form">
+                                <span class="button__text">	&#8594;</span>
+                            </button>
                         </div>
                 </form> 
             </div>
@@ -586,7 +729,7 @@
                 <div class="blog__inner__block">
                     <p class="blog__inner__text">Посмотреть все</p>
                     <a href="#" class="btn btn-slider">
-                        <span class="button__text btn__text-slider">--></span>
+                        <span class="button__text btn__text-slider">&#8594;</span>
                     </a>
                 </div>
             </div>
